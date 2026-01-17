@@ -1,0 +1,306 @@
+[12-Jan-26 17:00:36 - INFO] - InflexMusic.core.mongo - Connecting to your Mongo Database...
+[12-Jan-26 17:00:36 - INFO] - InflexMusic.core.mongo - Connected to your Mongo Database.
+[12-Jan-26 17:00:36 - INFO] - InflexMusic.core.dir - Directories Updated.
+[12-Jan-26 17:00:36 - INFO] - InflexMusic.core.git - Git Client Found [VPS DEPLOYER]
+[12-Jan-26 17:00:36 - INFO] - InflexMusic.misc - Local Database Initialized.
+[12-Jan-26 17:00:36 - INFO] - InflexMusic.core.bot - Starting Bot...
+[12-Jan-26 17:00:38 - INFO] - ShrutiMusic.platforms.Youtube.py - API URL loaded successfully
+[12-Jan-26 17:00:39 - INFO] - InflexMusic.misc - Sudoers Loaded.
+[12-Jan-26 17:00:45 - INFO] - InflexMusic.core.bot - Music Bot Started As 𝐵𝑒𝑠𝑡𝑖𝑒𝑠 𝑀𝑢𝑠𝑖𝑐 
+[12-Jan-26 17:00:45 - INFO] - InflexMusic.plugins - Successfully Imported Modules...
+[12-Jan-26 17:00:45 - INFO] - InflexMusic.core.userbot - Starting Assistants...
+[12-Jan-26 17:00:45 - INFO] - InflexMusic.core.userbot - Assistant Started as <a href=tg://user?id=7026747098>˹𝐁ᴇsᴛɪᴇ ♪ 𝐀ssɪsᴛᴀɴᴛ˼🌸</a>
+[12-Jan-26 17:00:45 - INFO] - InflexMusic.core.call - Starting PyTgCalls Client...
+
+[12-Jan-26 17:00:50 - INFO] - InflexMusic - Animal Music Bot Started Successfully
+[13-Jan-26 04:06:00 - INFO] - InflexMusic.core.mongo - Connecting to your Mongo Database...
+[13-Jan-26 04:06:00 - INFO] - InflexMusic.core.mongo - Connected to your Mongo Database.
+[13-Jan-26 04:06:00 - INFO] - InflexMusic.core.dir - Directories Updated.
+[13-Jan-26 04:06:00 - INFO] - InflexMusic.core.git - Git Client Found [VPS DEPLOYER]
+[13-Jan-26 04:06:00 - INFO] - InflexMusic.misc - Local Database Initialized.
+[13-Jan-26 04:06:00 - INFO] - InflexMusic.core.bot - Starting Bot...
+[13-Jan-26 04:06:02 - INFO] - ShrutiMusic.platforms.Youtube.py - API URL loaded successfully
+[13-Jan-26 04:06:03 - INFO] - InflexMusic.misc - Sudoers Loaded.
+[13-Jan-26 04:06:08 - INFO] - InflexMusic.core.bot - Music Bot Started As 𝐵𝑒𝑠𝑡𝑖𝑒𝑠 𝑀𝑢𝑠𝑖𝑐 
+[13-Jan-26 04:06:08 - INFO] - InflexMusic.plugins - Successfully Imported Modules...
+[13-Jan-26 04:06:08 - INFO] - InflexMusic.core.userbot - Starting Assistants...
+[13-Jan-26 04:06:09 - INFO] - InflexMusic.core.userbot - Assistant Started as <a href=tg://user?id=7026747098>˹𝐁ᴇsᴛɪᴇ ♪ 𝐀ssɪsᴛᴀɴᴛ˼🌸</a>
+[13-Jan-26 04:06:09 - INFO] - InflexMusic.core.call - Starting PyTgCalls Client...
+
+[13-Jan-26 04:06:14 - INFO] - InflexMusic - Animal Music Bot Started Successfully
+[13-Jan-26 06:07:52 - ERROR] - pyrogram.dispatcher - Telegram says: [400 MESSAGE_ID_INVALID] - The message id is invalid (caused by "messages.EditMessage")
+Traceback (most recent call last):
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/plugins/play/play.py", line 357, in play_commnd
+    await stream(
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/utils/stream/stream.py", line 174, in stream
+    await Inflex.join_call(
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/core/call.py", line 311, in join_call
+    await assistant.join_group_call(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytgcalls/methods/groups/join_group_call.py", line 168, in join_group_call
+    await FileManager.check_file_exist(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytgcalls/file_manager.py", line 47, in check_file_exist
+    if S_ISFIFO(os.stat(path).st_mode):
+FileNotFoundError: [Errno 2] No such file or directory: 'None'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 355, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/utils/decorators/play.py", line 183, in wrapper
+    return await command(
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/plugins/play/play.py", line 373, in play_commnd
+    return await mystic.edit_text(err)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/types/messages_and_media/message.py", line 3978, in edit_text
+    return await self._client.edit_message_text(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/methods/messages/edit_message_text.py", line 92, in edit_message_text
+    r = await self.invoke(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 94, in invoke
+    r = await session.invoke(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/session/session.py", line 401, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/session/session.py", line 369, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.MessageIdInvalid: Telegram says: [400 MESSAGE_ID_INVALID] - The message id is invalid (caused by "messages.EditMessage")
+[13-Jan-26 11:57:27 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-593805' coro=<Call.decorators.<locals>.stream_end_handler1() done, defined at /home/ubuntu/BestieMusicBot/InflexMusic/core/call.py:590> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/core/call.py", line 598, in stream_end_handler1
+    await self.change_stream(client, update.chat_id)
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/core/call.py", line 536, in change_stream
+    check[0]["dur"],
+IndexError: list index out of range
+[13-Jan-26 14:23:02 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-801767' coro=<Call.decorators.<locals>.stream_end_handler1() done, defined at /home/ubuntu/BestieMusicBot/InflexMusic/core/call.py:590> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/core/call.py", line 598, in stream_end_handler1
+    await self.change_stream(client, update.chat_id)
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/core/call.py", line 541, in change_stream
+    db[chat_id][0]["mystic"] = run
+IndexError: list index out of range
+[13-Jan-26 19:32:46 - ERROR] - pytgcalls - JOIN_VOICE_CALL_ERROR -> Telegram says: [400 GROUPCALL_INVALID] - The specified group call is invalid (caused by "phone.JoinGroupCall")
+[13-Jan-26 19:32:46 - ERROR] - pytgcalls - joinCallError -> Error: No active voice chat found on -1002771541683
+[14-Jan-26 04:13:36 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-1566781' coro=<Call.decorators.<locals>.stream_end_handler1() done, defined at /home/ubuntu/BestieMusicBot/InflexMusic/core/call.py:590> exception=UnboundLocalError("local variable 'thumbnail' referenced before assignment")>
+Traceback (most recent call last):
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/core/call.py", line 598, in stream_end_handler1
+    await self.change_stream(client, update.chat_id)
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/core/call.py", line 528, in change_stream
+    img = await get_thumb(videoid)
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/utils/thumbnails.py", line 101, in get_thumb
+    async with session.get(thumbnail) as resp:
+UnboundLocalError: local variable 'thumbnail' referenced before assignment
+[14-Jan-26 04:18:00 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-1571781' coro=<Call.decorators.<locals>.stream_end_handler1() done, defined at /home/ubuntu/BestieMusicBot/InflexMusic/core/call.py:590> exception=UnboundLocalError("local variable 'thumbnail' referenced before assignment")>
+Traceback (most recent call last):
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/core/call.py", line 598, in stream_end_handler1
+    await self.change_stream(client, update.chat_id)
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/core/call.py", line 528, in change_stream
+    img = await get_thumb(videoid)
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/utils/thumbnails.py", line 101, in get_thumb
+    async with session.get(thumbnail) as resp:
+UnboundLocalError: local variable 'thumbnail' referenced before assignment
+[14-Jan-26 10:47:58 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-1985800' coro=<Call.decorators.<locals>.stream_end_handler1() done, defined at /home/ubuntu/BestieMusicBot/InflexMusic/core/call.py:590> exception=UnboundLocalError("local variable 'thumbnail' referenced before assignment")>
+Traceback (most recent call last):
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/core/call.py", line 598, in stream_end_handler1
+    await self.change_stream(client, update.chat_id)
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/core/call.py", line 528, in change_stream
+    img = await get_thumb(videoid)
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/utils/thumbnails.py", line 101, in get_thumb
+    async with session.get(thumbnail) as resp:
+UnboundLocalError: local variable 'thumbnail' referenced before assignment
+[14-Jan-26 12:58:52 - ERROR] - pytgcalls - joinCallError -> Error: Telegram is having some internal server issues. Retries exhausted
+[14-Jan-26 13:00:40 - ERROR] - pytgcalls - JOIN_VOICE_CALL_ERROR -> Telegram says: [420 FLOOD_WAIT_X] - A wait of 24 seconds is required (caused by "phone.JoinGroupCall")
+[14-Jan-26 13:00:41 - ERROR] - pytgcalls - joinCallError -> Error: No active voice chat found on -1002956858018
+[14-Jan-26 13:00:41 - ERROR] - pytgcalls - JOIN_VOICE_CALL_ERROR -> Telegram says: [420 FLOOD_WAIT_X] - A wait of 23 seconds is required (caused by "phone.JoinGroupCall")
+[14-Jan-26 13:00:41 - ERROR] - pytgcalls - joinCallError -> Error: No active voice chat found on -1002956858018
+[14-Jan-26 13:00:41 - ERROR] - pytgcalls - JOIN_VOICE_CALL_ERROR -> Telegram says: [420 FLOOD_WAIT_X] - A wait of 23 seconds is required (caused by "phone.JoinGroupCall")
+[14-Jan-26 13:00:41 - ERROR] - pytgcalls - joinCallError -> Error: No active voice chat found on -1002956858018
+[14-Jan-26 18:33:59 - ERROR] - pyrogram.dispatcher - Telegram says: [420 SLOWMODE_WAIT_X] - A wait of 4 seconds is required to send messages in this chat (caused by "messages.SendMedia")
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 355, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/utils/decorators/language.py", line 56, in wrapper
+    return await mystic(_, message, language)
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/plugins/bot/start.py", line 106, in start_gp
+    await message.reply_photo(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/types/messages_and_media/message.py", line 2742, in reply_photo
+    return await self._client.send_photo(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/methods/messages/send_photo.py", line 219, in send_photo
+    r = await self.invoke(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 94, in invoke
+    r = await session.invoke(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/session/session.py", line 401, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/session/session.py", line 369, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.flood_420.SlowmodeWait: Telegram says: [420 SLOWMODE_WAIT_X] - A wait of 4 seconds is required to send messages in this chat (caused by "messages.SendMedia")
+[14-Jan-26 18:38:09 - ERROR] - pytgcalls - joinCallError -> Error: Telegram is having some internal server issues. Retries exhausted
+[14-Jan-26 18:38:10 - ERROR] - pyrogram.dispatcher - Telegram says: [400 MESSAGE_ID_INVALID] - The message id is invalid (caused by "messages.EditMessage")
+Traceback (most recent call last):
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/core/call.py", line 311, in join_call
+    await assistant.join_group_call(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytgcalls/methods/groups/join_group_call.py", line 286, in join_group_call
+    raise TelegramServerError()
+pytgcalls.exceptions.TelegramServerError: Telegram Server is having some internal problems
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/plugins/play/play.py", line 357, in play_commnd
+    await stream(
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/utils/stream/stream.py", line 174, in stream
+    await Inflex.join_call(
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/core/call.py", line 321, in join_call
+    raise AssistantErr(_["call_10"])
+InflexMusic.utils.exceptions.AssistantErr: <b>𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖲𝖾𝗋𝗏𝖾𝗋 𝖤𝗋𝗋𝗈𝗋</b>
+
+𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖨𝗌 𝖧𝖺𝗏𝗂𝗇𝗀 𝖲𝗈𝗆𝖾 𝖨𝗇𝗍𝖾𝗋𝗇𝖺𝗅 𝖯𝗋𝗈𝖻𝗅𝖾𝗆𝗌 , 𝖯𝗅𝖾𝖺𝗌𝖾 𝖳𝗋𝗒 𝖯𝗅𝖺𝗒𝗂𝗇𝗀 𝖠𝗀𝖺𝗂𝗇 𝖮𝗋 𝖱𝖾𝗌𝗍𝖺𝗋𝗍 𝖳𝗁𝖾 𝖵𝗂𝖽𝖾𝗈𝖢𝗁𝖺𝗍 𝖮𝖿 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 .
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 355, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/utils/decorators/play.py", line 183, in wrapper
+    return await command(
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/plugins/play/play.py", line 373, in play_commnd
+    return await mystic.edit_text(err)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/types/messages_and_media/message.py", line 3978, in edit_text
+    return await self._client.edit_message_text(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/methods/messages/edit_message_text.py", line 92, in edit_message_text
+    r = await self.invoke(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 94, in invoke
+    r = await session.invoke(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/session/session.py", line 401, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/session/session.py", line 369, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.MessageIdInvalid: Telegram says: [400 MESSAGE_ID_INVALID] - The message id is invalid (caused by "messages.EditMessage")
+[14-Jan-26 18:38:10 - ERROR] - pytgcalls - joinCallError -> Error: No active voice chat found on -1003212248926
+[14-Jan-26 18:38:10 - ERROR] - pyrogram.dispatcher - Telegram says: [400 MESSAGE_ID_INVALID] - The message id is invalid (caused by "messages.EditMessage")
+Traceback (most recent call last):
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/core/call.py", line 311, in join_call
+    await assistant.join_group_call(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytgcalls/methods/groups/join_group_call.py", line 286, in join_group_call
+    raise TelegramServerError()
+pytgcalls.exceptions.TelegramServerError: Telegram Server is having some internal problems
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/plugins/play/play.py", line 357, in play_commnd
+    await stream(
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/utils/stream/stream.py", line 174, in stream
+    await Inflex.join_call(
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/core/call.py", line 321, in join_call
+    raise AssistantErr(_["call_10"])
+InflexMusic.utils.exceptions.AssistantErr: <b>𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖲𝖾𝗋𝗏𝖾𝗋 𝖤𝗋𝗋𝗈𝗋</b>
+
+𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖨𝗌 𝖧𝖺𝗏𝗂𝗇𝗀 𝖲𝗈𝗆𝖾 𝖨𝗇𝗍𝖾𝗋𝗇𝖺𝗅 𝖯𝗋𝗈𝖻𝗅𝖾𝗆𝗌 , 𝖯𝗅𝖾𝖺𝗌𝖾 𝖳𝗋𝗒 𝖯𝗅𝖺𝗒𝗂𝗇𝗀 𝖠𝗀𝖺𝗂𝗇 𝖮𝗋 𝖱𝖾𝗌𝗍𝖺𝗋𝗍 𝖳𝗁𝖾 𝖵𝗂𝖽𝖾𝗈𝖢𝗁𝖺𝗍 𝖮𝖿 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 .
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 355, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/utils/decorators/play.py", line 183, in wrapper
+    return await command(
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/plugins/play/play.py", line 373, in play_commnd
+    return await mystic.edit_text(err)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/types/messages_and_media/message.py", line 3978, in edit_text
+    return await self._client.edit_message_text(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/methods/messages/edit_message_text.py", line 92, in edit_message_text
+    r = await self.invoke(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 94, in invoke
+    r = await session.invoke(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/session/session.py", line 401, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/session/session.py", line 369, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.MessageIdInvalid: Telegram says: [400 MESSAGE_ID_INVALID] - The message id is invalid (caused by "messages.EditMessage")
+[14-Jan-26 18:53:58 - ERROR] - pyrogram.dispatcher - 'NoneType' object has no attribute 'can_manage_video_chats'
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 355, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/utils/decorators/admins.py", line 154, in wrapper
+    if not member.can_manage_video_chats:
+AttributeError: 'NoneType' object has no attribute 'can_manage_video_chats'
+[14-Jan-26 18:54:34 - ERROR] - pyrogram.dispatcher - 'NoneType' object has no attribute 'can_manage_video_chats'
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 355, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/utils/decorators/admins.py", line 154, in wrapper
+    if not member.can_manage_video_chats:
+AttributeError: 'NoneType' object has no attribute 'can_manage_video_chats'
+[14-Jan-26 18:55:08 - ERROR] - pyrogram.dispatcher - 'NoneType' object has no attribute 'can_manage_video_chats'
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 355, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/utils/decorators/admins.py", line 154, in wrapper
+    if not member.can_manage_video_chats:
+AttributeError: 'NoneType' object has no attribute 'can_manage_video_chats'
+[14-Jan-26 18:55:15 - ERROR] - pyrogram.dispatcher - 'NoneType' object has no attribute 'can_manage_video_chats'
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 355, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/utils/decorators/admins.py", line 154, in wrapper
+    if not member.can_manage_video_chats:
+AttributeError: 'NoneType' object has no attribute 'can_manage_video_chats'
+[14-Jan-26 19:05:15 - ERROR] - pyrogram.dispatcher - 'NoneType' object has no attribute 'can_manage_video_chats'
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 355, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/utils/decorators/admins.py", line 154, in wrapper
+    if not member.can_manage_video_chats:
+AttributeError: 'NoneType' object has no attribute 'can_manage_video_chats'
+[15-Jan-26 03:36:30 - ERROR] - pyrogram.dispatcher - Telegram says: [406 CHANNEL_PRIVATE] - The channel/supergroup is not accessible (caused by "messages.SendMedia")
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 355, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/utils/decorators/language.py", line 56, in wrapper
+    return await mystic(_, message, language)
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/plugins/bot/start.py", line 106, in start_gp
+    await message.reply_photo(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/types/messages_and_media/message.py", line 2742, in reply_photo
+    return await self._client.send_photo(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/methods/messages/send_photo.py", line 219, in send_photo
+    r = await self.invoke(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 94, in invoke
+    r = await session.invoke(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/session/session.py", line 401, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/session/session.py", line 369, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.not_acceptable_406.ChannelPrivate: Telegram says: [406 CHANNEL_PRIVATE] - The channel/supergroup is not accessible (caused by "messages.SendMedia")
+[15-Jan-26 06:09:38 - ERROR] - pytgcalls - joinCallError -> Error: No active voice chat found on -1003212248926
+[15-Jan-26 07:34:43 - ERROR] - pyrogram.dispatcher - Telegram says: [403 CHAT_SEND_PHOTOS_FORBIDDEN] - You can't send photos in this chat (caused by "messages.SendMedia")
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 355, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/BestieMusicBot/InflexMusic/utils/decorators/play.py", line 75, in wrapper
+    return await message.reply_photo(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/types/messages_and_media/message.py", line 2742, in reply_photo
+    return await self._client.send_photo(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/methods/messages/send_photo.py", line 219, in send_photo
+    r = await self.invoke(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 94, in invoke
+    r = await session.invoke(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/session/session.py", line 401, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/session/session.py", line 369, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.forbidden_403.ChatSendPhotosForbidden: Telegram says: [403 CHAT_SEND_PHOTOS_FORBIDDEN] - You can't send photos in this chat (caused by "messages.SendMedia")
