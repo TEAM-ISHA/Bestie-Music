@@ -26,7 +26,7 @@
    ```
 5. **Clone the Repository**
    ```bash
-   git clone https://github.com/TEAM-ISHA/BESTIE-MUSIC && cd TestingMusicRepo
+   git clone https://github.com/TEAM-ISHA/BESTIE-MUSIC && cd Bestie-Music
    ```
 6. **Install Requirements**
    ```bash
